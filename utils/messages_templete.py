@@ -1,7 +1,7 @@
 def text_message(text: str, number: str) -> dict:
     return {
         "messaging_product": "whatsapp",
-        "to": "59897464651",
+        "to": number,
         "type": "text",
         "text": {
             "body": text

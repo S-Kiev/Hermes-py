@@ -48,6 +48,9 @@ def received_message():
         number = message["from"]
         text = get_text_user(message)
           
+       # Enviar el text a GPT para procesar la respuesta   
+          
+       # Aqui se usa el modelo de mensaje de texto pero pueden usarse otros   
         data = text_message(text, number)
         
         if send_message_whatsapp(data):
